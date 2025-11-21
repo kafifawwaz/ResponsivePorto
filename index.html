@@ -1,179 +1,257 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Responsive Portofolio Website</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-
-<nav>
+    </div>
+    <nav>
     <div class="nav-container">
         <div class="logo">
         <span>Waz</span>
         </div>
         <div class="links">
-            <div class="link"><a href="#">Home</a></div>
-            <div class="link"><a href="#">About</a></div>
-            <div class="link"><a href="#">Skills</a></div>
-            <div class="link"><a href="#">Service</a></div>
-            <div class="link"><a href="#">Contact</a></div>
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#skills">Skills</a></div>
+        <div class="link"><a href="#services">Service</a></div>
+        <div class="link"><a href="#contact">Contact</a></div>
         </div>
-        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburger()"></i>
     </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Service</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancle" onclick="cancle()"></i>
-            </div>
-        </div>  
-</nav>
-<section>
-    <div class="main-container">
+    <div class="dropdown">
+        <div class="links">
+        <a href="#home" onclick="cancel()">Home</a>
+            <a href="#about" onclick="cancel()">About</a>
+            <a href="#skills" onclick="cancel()">Skills</a>
+            <a href="#services" onclick="cancel()">Service</a> 
+            <a href="#contact" onclick="cancel()">Contact</a>
+            
+        <i class="fa-solid fa-xmark cancle" onclick="cancel()"></i>
+        </div>
+    </div>
+    </nav>
+    <section>
+    <div class="main-container" id="home">
         <div class="image">
-            <img src="main1.jpg" alt="">
+        <img src="main1.jpg" alt="" />
         </div>
         <div class="content">
-            <h1 data-aos="fade-left">Hey i'm<span>Kafi Fawwaz</span></h1>
-            <div class="typewriter">I'm a<span class="typewriter-text"></span><label for=""></label>
-            </div>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </div>
-            <div class="btn">
-                <button>Hire Me</button>
-            </div>
+        <h1 data-aos="fade-left">
+            Hey i'm <span class="typewriter">Kafi Fawwaz</span>
+        </h1>
+        <div class="typewriter">
+            I'm a<span class="typewriter-text"></span><label for=""></label>
+        </div>
+        <p>
+            A Student dedicated to technology, one of which is programming and quite interested in business. Prioritize tasks, can work together well, can identify problems well, and are quite good in the field of public speaking.
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/kafifawwaz"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kafi-fawwaz-adabi-906568321/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/kafifawwaz_?igsh=MWg5ZTA0N3J3Y29jeQ%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://line.me/ti/p/kfwaz" target="_blank">
+                <i class="fa-brands fa-line"></i>
+            </a>
+        </div>
+        <div class="btn">
+            <a href="mailto:kafifawwaz@gmail.com">Hire Me</a>
+        </div>
         </div>
     </div>
-</section>   
+    </section>
 
-
-<section class="about" id="about">
+    <section class="about" id="about">
     <div class="content">
-        <div class="title"><span>About Me</span></div>
+        <div class="title"><span>About Me</span>
+        </div>
+        
         <div class="about-details">
-            <div class="left">
-                <img src="main1.jpg" alt=""/>
-            </div>
-            <div class="right">
-                <div class="topic">Designing Is My Passion</div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-                </p>
-                <div class="button">
-                    <button>Download CV</button>
-                </div>
+        <div class="left">
+            <img src="main1.jpg" alt="" />
+        </div>
+        <div class="right">
+            <div class="topic">Technology Is My Passion</div>
+            <p>
+            This is the driving force behind all my work. For me, technology isn't just a tool it's the canvas for modern creativity, expressed in everything from clean code to compelling visual media.
+
+            I thrive at the intersection of technology and art. I love building functional websites through web design and coding. This same passion extends to visual storytelling, which I capture through photography and videography, and refine with detailed video editing and poster design. I am dedicated to using technology to build, create, and innovate.
+            </p>
+            <div class="button">
+                <a href="KafiFawwazAdabi_CV.pdf" download>Download CV</a>
             </div>
         </div>
+        </div>
     </div>
-</section>
+    </section>
 
-<section class="skills" id="skills">
+    <section class="skills" id="skills">
     <div class="content">
         <div class="title"><span>My Skills</span></div>
         <div class="skills-details">
-            <div class="text">
-                <div class="topic">
-                    Skills Reflects Our Knowledge
-                </div>
-                <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="experience">
-                    <div class="num">1</div>
-                    <div class="exp">
-                        Years Of <br/>
-                        Experience
-                    </div>
-                </div>
+        <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+            <p data-aos="fade-right">
+            I have a solid foundation in both front-end and back-end development. I use HTML5 and CSS3 to create responsive, well-designed user interfaces, and leverage powerful languages like Python and Java to build robust applications. As a university student, I am continuously expanding on this foundation and applying my knowledge to new projects and challenges.
+            </p>
+            <div class="experience">
+            <div class="num">1</div>
+            <div class="exp">
+                Year Of <br />
+                Experience
             </div>
-            <div class="boxes">
-                <div class="box">
-                    <div class="topic">HTML</div>
-                    <div class="per">40%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">CSS</div>
-                    <div class="per">40%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">Python</div>
-                    <div class="per">80%</div>
-                </div>
-                <div class="box">
-                    <div class="topic">Java</div>
-                    <div class="per">70%</div>
-                </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="services" id="services">
-    <div class="content">
-        <div class="title"><span>My Service</span></div>
         <div class="boxes">
             <div class="box">
-                <div class="icon">
-                    <i class="fas fa-desktop"></i>
-                </div>
-                <div class="topic">Video Editing</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <img src="html.png" alt="" width="100px" height="100px">
             </div>
             <div class="box">
-                <div class="icon">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <div class="topic">Graphic Design</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <img src="css-3.png" alt="" width="100px" height="100px">
             </div>
             <div class="box">
-                <div class="icon">
-                    <i class="fas fa-camera-retro"></i>
-                </div>
-                <div class="topic">Photography</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <img src="python.png" alt="" width="100px" height="100px">
             </div>
             <div class="box">
-                <div class="icon">
-                    <i class="fas fa-camera-retro"></i>
-                </div>
-                <div class="topic">Videography</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <img src="java.png" alt="" width="100px" height="100px">
             </div>
         </div>
+        </div>
     </div>
-</section>
+    </section>
 
-<section class="contact" id="contact">
+    <section class="services" id="services">
+    <div class="content">
+        <div class="title"><span>What I Do</span></div>
+        <div class="boxes">
+        <div class="box">
+            <div class="icon">
+            <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Video Editing</div>
+            <p>
+            Turning raw footage into compelling stories. I love exploring pacing, transitions, and effects to create engaging visual narratives.
+            </p>
+        </div>
+        <div class="box">
+            <div class="icon">
+            <i class="fas fa-pen-nib"></i>
+            </div>
+            <div class="topic">Graphic Design</div>
+            <p>
+            Visualizing ideas into digital reality. I specialize in creating aesthetic layouts, from typography for social media to poster designs that stand out.
+            </p>
+        </div>
+        <div class="box">
+            <div class="icon">
+            <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Photography</div>
+            <p>
+            Photography is my way of seeing the world. I love experimenting with cameras to capture unique perspectives.
+            </p>
+        </div>
+        <div class="box">
+            <div class="icon">
+            <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Videography</div>
+            <p>
+            I enjoy being behind the lens, exploring how camera movements can change the mood and feel of a video.
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
     <div class="content">
         <div class="title">
-            <span>Contact Me</span>
+        <span>Contact Me</span>
         </div>
         <div class="text">
-            <div class="topic">Have Any Project?</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="button">
-                <button>Let's Chat</button>
-            </div>
+        <div class="topic">Have Any Project?</div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+        </p>
+        <div class="button">
+            <a href="https://ig.me/m/kafifawwaz_">Let's Chat</a>
+        </div>
         </div>
     </div>
-</section>
+    </section>
 
-<footer>
+    <footer>
     <div class="text">
-        <span>Created by
-            <a href="#">kafifawwaz</a>
-        &#169; 2025 All Rights Reserved</span>
+        <span
+        >Created by
+        <a href="#">Kafifawwaz</a>
+        &#169; 2025 All Rights Reserved</span
+        >
     </div>
-</footer>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+
+    function hamburger() {
+        document.querySelector(".dropdown").style.transform = "translateY(0px)";
+    }
+
+    function cancel() {
+        document.querySelector(".dropdown").style.transform =
+        "translateY(-500px)";
+    }
+
+    const textElement = document.querySelector(".typewriter-text");
+    const texts = ["Video Editor", "Graphic Designer", "Photographer", "Videographer"];
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typeEffect = () => {
+        const currentText = texts[textIndex];
+        const currentChar = currentText.substring(0, charIndex);
+        textElement.textContent = currentChar;
+
+        // efek cursor kedip 
+        textElement.style.borderRight = "2px solid #b74b4b";
+
+        if (!isDeleting && charIndex < currentText.length) {
+            // sedang ngetik
+            charIndex++;
+            setTimeout(typeEffect, 100); 
+        } else if (isDeleting && charIndex > 0) {
+            // pas ngapus 
+            charIndex--;
+            setTimeout(typeEffect, 50);
+        } else {
+            // kalo selesai ngetik atau hapus kata
+            isDeleting = !isDeleting;
+
+            // hilangin cursor pas jead
+            if (isDeleting) textElement.style.borderRight = "2px solid transparent";
+
+            textIndex = !isDeleting ? (textIndex + 1) % texts.length : textIndex;
+            setTimeout(typeEffect, 1200);
+        }
+    }
+
+    typeEffect();
+    </script>
 </body>
 </html>
