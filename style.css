@@ -45,21 +45,28 @@ background: #b74b4b;
 nav {
 width: 100%;
 height: 10vh;
+position: fixed;
+top: 30px;
+left: 0;
+z-index: 1000;
+background: transparent;
 }
 
 .nav-container {
 width: 100%;
 height: 100%;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
+position: relative;
 }
 
 .logo {
-color: white;
+/* color: white;
 font-size: 2rem;
 font-weight: bold;
-margin-left: 30px;
+margin-left: 30px; */
+display: none;
 }
 
 .logo span {
@@ -81,14 +88,24 @@ font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 
 .nav-container .links {
 display: flex;
-/* margin-left: 1200px; */
+align-items: center;
+gap: 10px;
+
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .nav-container .links a {
 position: relative;
 font-size: 1.2rem;
 color: white;
-margin: 0 20px;
+margin: 0 15px;
 text-decoration: none;
 font-weight: 550;
 transition: 0.3s linear;
@@ -146,25 +163,27 @@ background-color: #b74b4b;
 
 section {
 width: 100%;
-min-height: 90vh;
+min-height: 100vh;
 }
 
 section .main-container {
 display: flex;
 justify-content: center;
 padding-left: 0px;
-align-items: center;
 text-align: center;
-min-height: 90vh;
+
+min-height: 100vh;
+align-items: flex-start;
+padding-top: 30vh;
+box-sizing: border-box;
+}
+
+#home {
+    min-height: 100vh;
+
 }
 
 .main-container .image {
-/* width: 500px;
-height: 70vh;
-border-radius: 100%;
-overflow: hidden;
-box-shadow: 0 0 50px #b74b4b;
-margin-left: 40px; */
 display: none;
 }
 
@@ -599,13 +618,12 @@ section .main-container {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
-
     justify-content:  flex-start;
     align-items: center;
 
-    padding-top:  120px;
-    min-height:  auto;
+    padding-top:  140px;
     padding-bottom: 50px;
+    min-height:  auto;
 }
 
 .main-container .content {
@@ -639,28 +657,9 @@ section .main-container {
 display: none;
 }  
 
-/* .skills .skills-details {
-align-items: center;
-justify-content: center;
-flex-direction: column;
-    }
-.skills-details .text {
-width: 100%;
-margin-bottom: 50px;
-    }
-.skills-details .boxes {
-justify-content: center;
-align-items: center;
-width: 100%;
-    }
-.services .boxes .box {
-margin: 20px 0;
-width: 100%;
-    }
-.contact .text {
-width: 100%;
-    }
-} */
+#home .main-container {
+    min-height: 100vh;
+}
 
 
 @media (max-width: 500px) {
