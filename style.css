@@ -524,6 +524,25 @@ color: #b74b4b;
 color: #fff;
 }
 
+.services .boxes .box .topic .badge {
+    font-size: 0.8rem;     
+    background: transparent;
+    color: #b74b4b;         
+    border: 1px solid #b74b4b; 
+    padding: 2px 8px;     
+    border-radius: 4px;    
+    margin-left: 8px;      
+    vertical-align: middle; 
+    font-weight: 400;      
+    transition: all 0.4s ease;
+}
+
+.services .boxes .box:hover .topic .badge {
+    color: #b74b4b;
+    background-color: white;
+    border-color: white;
+}
+
 /*Contact Me*/
 .contact {
 background: black;
